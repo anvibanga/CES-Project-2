@@ -14,7 +14,6 @@ button_count = 0
 def write_page(data_list):
     fo = open(file_name,"w+")
     # Start of HTML page.
-    fo.write("<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01//EN' 'http://www.w3.org/TR/html4/strict.dtd'>")
     fo.write("<html><head><title>"+page_title+"</title>") # Page & Head begin.
     fo.write("<meta http-equiv='refresh' content='1'>")
     fo.write("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>")
@@ -23,10 +22,6 @@ def write_page(data_list):
     fo.write("<link rel='icon' type='image/png' href='favicon.png' />")
     fo.write("</head><body><center><p>"+page_title+"</p>") # Head end, body begin.
 
-    # Table begin.
-    #fo.write("<table border='1' border-spacing='5' style='text-align:center;'>")
-    #for i in range(0,len(data_list),2):
-    #fo.write("<td>"+str(button_count)+"</td>") # Table column 1.
     img_url = "/Users/Anvi/Downloads/redlicorice.jpeg"
     if (int(button_count)/2 % 7 == 0):
         img_url = "/Users/Anvi/Downloads/redlicorice.jpeg"
